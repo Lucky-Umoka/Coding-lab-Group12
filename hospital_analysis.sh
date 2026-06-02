@@ -22,3 +22,40 @@ process_vitals() {
 }
 
 process_vitals
+
+water_audit() {
+
+    echo "Running water usage audit..."
+
+    
+
+    logfile="active_logs/water_usage.log"
+
+    
+
+    if [ -f "$logfile" ]; then
+
+        awk -F',' '/ICU_WATER_RESERVE/ {sum += $3; count++} END {
+
+            printf "=== ICU Water Usage Summary ===\n"
+
+            printf "Total Readings : %d\n", count
+
+            printf "Average Usage  : %.2f\n", sum/count
+
+        }' "$logfile"
+
+    else
+
+        echo "Water log file not found."
+
+    fi
+
+}
+
+# --- Execution ---
+
+process_vitals
+
+water_audit
+
