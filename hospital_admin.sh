@@ -1,4 +1,17 @@
 #!/bin/bash
+initialize_system() {
+    echo "Initializing KNH system environment..."
+    local directories=("active_logs" "archived_logs" "reports")
+    for dir in "${directories[@]}"; do
+        if [ -d "$dir" ]; then
+            echo "Directory '$dir' already exists. Skipping."
+        else
+            echo "Creating $dir directory..."
+            mkdir -p "$dir"
+        fi
+    done
+    echo "System initialization complete."
+}
 
 secure_data() {
     echo "Securing active_logs directory..."
@@ -13,6 +26,7 @@ secure_data() {
     ls -l | grep active_logs
 }
 
+ member3-orchestrator
 secure_data#!/bin/bash
 
 # --- Function Definitions ---
@@ -24,6 +38,9 @@ initialize_system() {
 secure_data() {
     # Member 2's code goes here
 }
+=======
+
+ main
 
 # --- Member 3: Interactive Menu (while loop) ---
 
