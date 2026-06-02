@@ -25,36 +25,11 @@ secure_data() {
     # Display the new permissions to the user
     ls -l | grep active_logs
 }
-
-<<<<<<< HEAD
-secure_data#!/bin/bash
-
-# --- Function Definitions ---
-
 initialize_system() {
     # Member 1's code goes here
-}
-
-secure_data() {
+}secure_data() {
     # Member 2's code goes here
 }
-=======
-
->>>>>>> 2451d41ae617fd2a05858658ccf6edd8e51fa33b
-
-# --- Member 3: Interactive Menu (while loop) ---
-
-while true
-do
-    echo ""
-    echo "================================"
-    echo "KNH Hospital Admin Dashboard"
-    echo "================================"
-    echo "1. Initialize system"
-    echo "2. Secure Data"
-    echo "3. Run all"
-    echo "4. Exit"
-
     read -p "Choose an option: " choice
 
     case $choice in
