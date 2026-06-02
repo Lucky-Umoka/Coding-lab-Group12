@@ -26,7 +26,21 @@ secure_data() {
     ls -l | grep active_logs
 }
 
+ member3-orchestrator
+secure_data#!/bin/bash
 
+# --- Function Definitions ---
+
+initialize_system() {
+    # Member 1's code goes here
+}
+
+secure_data() {
+    # Member 2's code goes here
+}
+=======
+
+ main
 
 # --- Member 3: Interactive Menu (while loop) ---
 
