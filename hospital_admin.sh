@@ -53,7 +53,7 @@ do
         3)
             initialize_system
             secure_data
-            echo "System Environment secured."
+	    echo "System Environment secured $(date)"
             ;;
         4)
             echo "Exiting dashboard..."
@@ -63,5 +63,4 @@ do
             echo "Invalid option. Please choose 1-4."
             ;;
     esac
-
 done
