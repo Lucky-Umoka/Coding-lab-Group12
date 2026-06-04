@@ -55,7 +55,6 @@ water_audit() {
 
 # --- Execution ---
 
-process_vitals
 
 water_audit
 
