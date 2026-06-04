@@ -35,5 +35,10 @@ water_audit() {
 }
 
 # --- Execution ---
+<<<<<<< HEAD
 process_vitals
+=======
+
+
+>>>>>>> 74e70f552bc717f5de17ca2c00bf7116e0ef6ece
 water_audit
